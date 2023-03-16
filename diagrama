@@ -1,0 +1,37 @@
+                           +-----------------+
+                           |     Usuarios    |
+                           +-----------------+
+                           | id_usuario      |
+                           | nombre         |
+                           | email          |
+                           | contrasena     |
+                           +-----------------+
+                                    |
+                                    |
+                                    |
+            +-----------------------+------------------------+
+            |                                                |
+            |                                                |
++------------------+                             +-----------------+
+|     Compras       |                             |    Productos    |
++------------------+                             +-----------------+
+| id_compra        |                             | id_producto     |
+| id_usuario (FK)  |                             | nombre          |
+| fecha            |                             | descripcion     |
+| total            |                             | precio          |
++------------------+                             | stock           |
+                                                  +-----------------+
+                                                          |
+                                                          |
+                                                          |
+                                                      +------+
+                                                      |      |
+                                                      |      |
+                                              +-----------------+
+                                              | DetalleCompra   |
+                                              +-----------------+
+                                              | id_compra       |
+                                              | id_producto (FK)|
+                                              | cantidad        |
+                                              | precio_unitario |
+                                              +-----------------+
